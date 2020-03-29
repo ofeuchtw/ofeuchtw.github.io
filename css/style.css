@@ -1,0 +1,228 @@
+body {
+	/*background-color: #141414;*/
+	background-color: white;
+	/*position:fixed;*/
+	height: 2000px;
+    top:0px;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    font-family: ‘Goudy Old Style’, garamond, ‘book antiqua’, ‘Times New Roman’, Times, serif sequence;
+}
+
+h2 {
+	color: #c991b5;
+	font-size: 30px;
+	margin-left: 10px;
+	margin-top: 10px;
+	letter-spacing: .15em;
+	font-weight: 100;
+	position: fixed;
+}
+
+a {
+	color: rgba(255,255,255,.5);
+}
+
+/* When the mouse cursor is place on top of the link without a click */
+a:hover {
+	color: rgba(255,255,255,.8);
+	text-decoration: none;
+}
+
+/*Like :hover but where the link is selected using the Tab key on a keyboard. Hover and focus states are often styled together.*/
+a:focus {
+	color: rgba(255,255,255,.8);
+	text-decoration: none;
+}
+
+/*Visited (:visited): The appearance of a link that the user has clicked on the page before when the mouse cursor is not on top of it*/
+/*Active (:active): When the link is in the process of being clicked. It might be super quick, but this is when the mouse button has been depressed and before the click is over.*/
+
+.instruction {
+	color: white;
+	font-size: 20px;
+	letter-spacing: .1em;
+	font-weight: 100;
+	position: fixed;
+}
+
+#instruction_1 {
+	left: 44%;
+	top: 255px;		
+}
+
+#instruction_2 {
+	left: 55%;
+	top: 180px;
+	display: none;
+}
+
+#canvas {
+	/*width: 96%;
+	height: 240px;*/
+	position: fixed;
+	left: 10px;
+	top: 50px;
+	image-rendering: -moz-crisp-edges;
+ 	image-rendering: -webkit-crisp-edges;
+  	image-rendering: pixelated;
+}
+
+#canvas2_container {
+	position: fixed;
+	bottom: 50px;
+	left: 10px;
+	width: 625;
+	height: 280;
+}
+
+#canvas2 {
+	visibility: hidden;
+	position: relative;
+	top: 5px;
+	image-rendering: -moz-crisp-edges;
+ 	image-rendering: -webkit-crisp-edges;
+  	image-rendering: pixelated;
+  	border-style: solid;
+  	border-color: rgb(60,125,204);
+  	border-width: 3px;
+}
+
+#overlay {
+	position: fixed;
+	left: 360px;
+	top: 335px;
+}
+
+#links {
+	position: fixed;
+	bottom: 0;
+}
+
+td {
+    padding: 10px;
+    text-align: left;
+}
+
+.link {
+	width: 30px;
+	height: 30px;
+	opacity: .8;	
+}
+
+#shadow {
+	width: 20px;
+	height: 300%;
+	position: fixed;
+	right: 10px;
+	margin:0;
+	/*background: -webkit-linear-gradient(left, black , #c991b5);*/
+	opacity: .7;
+}
+
+#sidePanel {
+	background-color: #c991b5;
+	position: fixed;
+	right: 0px;
+	margin:0;
+	padding: 0;
+	width: 30px;
+	height: 300%;
+}
+
+#about_label {
+	color: white;
+	font-size: 16px;
+	margin-left: 32px;
+	margin-top: 10px;
+	letter-spacing: .1em;
+	font-weight: 100;
+	width: 190px;
+}
+
+#about_body_container {
+	/*background: red;*/
+}
+
+.about_body {
+	color: white;
+	font-size: 16px;
+	margin-left: 32px;
+	margin-top: 20px;
+	letter-spacing: .1em;
+	font-weight: 100;
+	width: 210px;
+}
+
+#about_1 {
+	margin-top: 60px;
+}
+
+.photo {
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	right: 0px;
+	margin: 0;
+	visibility: hidden;
+	opacity: 0;
+	top: 0px;
+}
+
+#photo0 {
+	top: 0px;
+}
+
+#photo1 {
+	top: 200px;
+}
+
+#photo2 {
+	top: 400px;
+}
+
+#photo3 {
+	top: 600px;
+}
+#photo4 {
+	top: 800px;
+}
+
+#fork{
+  position:fixed;
+  top:10px;
+  left:300px;
+  color:#141414;
+  text-decoration:none;
+  border:1px solid rgba(255,255,255,.2);
+  opacity: 1;
+  padding:.5em .7em;
+  margin:1%;
+  transition: color .5s;
+  overflow:hidden;
+  height: 30px;
+  line-height: 12px;
+}
+
+#fork:before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 145%; height: 100%;
+  /*background: linear-gradient(to right, cornflowerblue,white);*/
+  background: rgba(255,255,255,.2);
+  opacity: .6;
+  z-index: -1;
+  transform-origin:0 0 ;
+  transform:translateX(-100%) skewX(-45deg);
+  transition: transform .5s;
+}
+
+#fork:hover {
+  color: lavender;
+}
+
+#fork:hover:before {
+  transform: translateX(0) skewX(-45deg);
+}

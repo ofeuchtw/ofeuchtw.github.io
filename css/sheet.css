@@ -1,0 +1,94 @@
+body {
+	margin: 0 auto;
+  	font-family: Helvetica;
+  	background-color: #eee;
+  	background-size: 24px 24px;
+  	background-image: repeating-linear-gradient(0deg, rgba(20, 0, 255, 0.1), rgba(0, 0, 0, 0.1) 1px, transparent 1px, transparent 24px), repeating-linear-gradient(90deg,rgba(20, 0, 255, 0.1), rgba(0, 0, 0, 0.1) 1px, transparent 1px, transparent 24px);
+}
+
+.container {
+	height: 120px;
+}
+
+.container > header {
+	margin: 0 auto;
+	padding: 1em 0 2em 0;
+ 	text-align: center;
+ 	color: #043b4f;
+}
+
+.container > header h1 {
+	font-size: 4em;
+	line-height: 1.15;
+	margin: 0;
+	font-weight: 100;
+}
+
+.container > header h2 {
+	display: block;
+	font-size: 2em;
+ 	font-weight: 300;
+ 	line-height: 1;
+  	margin: 0;
+	padding: 0 0 0.7em 0.1em;
+}
+
+.container > header span {
+  font-size: 32%;
+}
+
+#content {
+	margin: 0 auto;
+	padding: 20px;
+}
+
+tr {
+	bottom: 20px;
+}
+
+td {
+	margin: 0 auto;
+	padding: 0 10px 20px 10px;
+}
+
+.panel {
+	width: 200px;
+	height: 300px;
+	background-color: white;
+	box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.2), 0 0 20px 2px rgba(0, 0, 0, 0.19);
+	margin: 0 auto;
+}
+
+#main-button-wrapper {
+	margin: 0 auto;
+	margin-top: 30px;
+	width: 342px;
+	height: 60px;
+}
+
+.button {
+	box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.2), 0 0 20px 2px rgba(0, 0, 0, 0.19);
+	background-color: #043b4f;
+	color: #eee;
+	font-size: 18px;
+	font-weight: 100;
+	text-align: center;
+	padding: 20px;
+}
+
+.button:hover {
+	background-color: #043b4f40;
+	color: #043b4f;
+}
+
+.main {
+	border: 3px solid white;
+	height: 45px;	
+	width: 115px;
+	float: left;
+	padding-top: 20px;
+}
+
+#new {
+	margin-right: 20px;	
+}
