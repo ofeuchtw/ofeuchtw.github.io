@@ -39,11 +39,11 @@ $("#instruction_1").css("left", width/2 - 50 + "px");
 $("#instruction_2").css("left",width/2 + 50 + "px");
 
 //set up second canvas
-var canvas2 = document.querySelector("#canvas2");
-var ctx2 = canvas2.getContext('2d');
+// var canvas2 = document.querySelector("#canvas2");
+// var ctx2 = canvas2.getContext('2d');
 
-var width2 = canvas2.width = 615;
-var height2 = canvas2.height = 250;
+// var width2 = canvas2.width = 615;
+// var height2 = canvas2.height = 250;
 
 //set up overlay
 var overlay = document.querySelector("#overlay");
@@ -82,7 +82,7 @@ $(document).ready(function() {
     	$("#overlay").css("opacity", 1 - $(window).scrollTop() / limit);
     	$(".instruction").css("opacity", 1 - $(window).scrollTop() / limit);
 
-    	$("#canvas2").css("opacity", $(window).scrollTop() / 350 - 1.5);
+    	// $("#canvas2").css("opacity", $(window).scrollTop() / 350 - 1.5);
 
 
     	currentColor = blend(base,"rgb(75,156,255)", Math.min($(window).scrollTop() / 700.0,1)); 
@@ -94,7 +94,7 @@ $(document).ready(function() {
 
     	resetCanvas();
 
-    	resetCanvas2();
+    	// resetCanvas2();
 
     	if($(window).scrollTop() >= limit) {
     		$(".c1").css("visibility",'hidden');
@@ -110,11 +110,11 @@ $(document).ready(function() {
     		
     	}
 
-    	if($(window).scrollTop() <= 350) {
-    		$("#canvas2").css("visibility",'hidden');
-    	} else {
-    		$("#canvas2").css("visibility",'visible');
-    	}
+    	// if($(window).scrollTop() <= 350) {
+    	// 	$("#canvas2").css("visibility",'hidden');
+    	// } else {
+    	// 	$("#canvas2").css("visibility",'visible');
+    	// }
  	 });
 
 	$(canvas).on({
